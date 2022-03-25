@@ -1,10 +1,12 @@
 const produtoModel = require("./models/produtos");
 
-(() => {
-    buscarProdutos();
+(async () => {
+    const data = await buscarProdutos();
+    console.log(data);
+    process.exit();
 })();
 
 async function buscarProdutos() {
-  const data = await produtoModel.findAll();
-  console.log(data);
+  const data = await produtoModel.findOne();
+  return data.dataValues;
 }
