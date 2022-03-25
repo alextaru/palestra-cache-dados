@@ -8,7 +8,11 @@
 ## Instalação
 ```bash
 $ npm install
+```
+```bash
 $ npm run docker
+```
+```bash
 $ npm run database
 ```
 
