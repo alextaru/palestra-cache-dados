@@ -1,12 +1,14 @@
 {
-  "name": "graphql",
+  "name": "cache-dados",
   "version": "1.0.0",
-  "description": "",
+  "description": "cache em banco de dados",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "docker": "docker-compose up -d",
+    "database": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all"
   },
-  "author": "",
+  "author": "alexandre goncalves ferreira",
   "license": "ISC",
   "dependencies": {
     "pg": "^8.7.3",
